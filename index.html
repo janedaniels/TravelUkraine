@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uc">
 
 <head>
     <meta charset="UTF-8">
@@ -97,7 +97,7 @@
             border-radius: 2%;
         }
 
-        aside>div {
+        aside > div {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
@@ -114,6 +114,13 @@
             font-size: 14px;
             font-weight: 300;
         }
+        form {
+            max-width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+       
     </style>
     <link href="
     https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
@@ -125,7 +132,6 @@
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="./style/style.css"> -->
 </head>
-
 <body>
     <header class="page-header">
         <nav class="page-nav">
@@ -187,59 +193,8 @@
                 </div>
                 <button type="submit">Відправити</button>
             </aside>
-            </div>
         </article>
-        <!-- <article class="article-zam container">
-            <img class="zam-img" src="" alt="zamok-shenborniv" width="" height="">
-            <h2>Палац графів Шенборнів</h2>
-            <p>Сьогодні це – санаторій “Карпати”, а колись тут, у Закарпатській області, австрійські графи Шенборни збудували свою резиденцію та мисливський будинок. Особливістю замку є те, що побудовано його за принципом астрономічного року: 365 вікон (365 днів), 52 димарі (52 тижнів у році), 12 веж (12 місяців), 7 виходів (7 днів тижня). До сьогодні на стінах палацу залишились фамільні герби, що належали колись Шенборнам. Побудовано замок у традиціях французького Ренесансу, що додає йому витонченої чарівності та шарму.<a href="#" class="read-more link ">&nbsp;&nbsp;читати посністю ...</a></p>
-        <aside>
-            <h2>Найпопулярніші статті:</h2>
-            <ul class="list">
-                <li><a class="link" href="#">Олеський замок</a></li>
-                <li><a class="link" href="#">Аккерманська фортеця</a></li>
-                <li><a class="link" href="#">Шарівський замок у Харківській області</a></li>
-                <li><a href="#" class="read-more link ">Ще більше статей ...</a></li>
-            </ul>
-            <h3>Підпишись на cтатті автора!</h3>
-            <div>
-                <label for="email">email:</label>
-                <input type="email" id="email" name="user_email">
-            </div>
-            <div>
-                <label for="subscription">Хочу отримувати новини</label>
-                <input id="subscription" type="checkbox" name="subscription" class="subscription-button">
-            </div>
-            <button type="submit">Відправити</button>
-        </aside>
-        </article> -->
-        <!-- <article class="article-zam container">
-            <img class="zam-img" src="" alt="zamok-razymovskogo" width="" height="">
-            <h2>Палац Кирила Разумовського</h2>
-            <p>Історія палацу в Батурині разюче схожа з історією Маріїнського в Києві. З міркувань графа, палац повинен був виконувати роль штаб-квартири для українських гетьманів, куди б вони з’їжджалися на термінові наради. Однак відразу після кончини Розумовського гетьманів більше не призначали. Спадкоємці відмовилися від маєтку через його провінційність і палац залишився в забутті. Близько 100 довгих років маєток не піддавався реставрації, але в 1908 році онук гетьмана вирішив взятися за замок і повернути йому колишній вигляд. Та цьому не судилося реалізуватися, адже наближався 1917 рік, і за вікнами вже «виднілися червоні прапори». Сучасного вигляду палац набув з 2003 року. На даний момент в залах маєтку проходять розкішні бали і виставки фамільних цінностей.<a href="#" class="read-more link ">&nbsp;&nbsp;читати посністю ...</a></p>
-        </article> -->
-        <!-- <section class="section-priv-articles container">
-            <h2>Найпопулярніші статті:</h2>
-            <ul class="list">
-                <li><a class="link" href="#">Олеський замок</a></li>
-                <li><a class="link" href="#">Аккерманська фортеця</a></li>
-                <li><a class="link" href="#">Шарівський замок у Харківській області</a></li>
-                <li><a href="#" class="read-more link ">Ще більше статей ...</a></li>
-            </ul>
-            <div>
-            <h3>Підпишись на новини!</h3>
-                <div>
-                <label for="email">email:</label>
-                <input type="email" id="email" name="user_email">
-                </div>
-                <div>
-                <label for="subscription">Хочу отримувати новини</label>
-                <input id="subscription" type="checkbox" name="subscription" class="subscription-button">
-                </div>
-                <button type="submit">Відправити</button>
-                </div>
-        </section> -->
-        <footer id="contact">
+        <section>
             <h2 class="">Контакти</h2>
             <ul>
                 <li>
@@ -259,6 +214,8 @@
                     <a href="mailto:travel_ukr@email.com">travel_ukr@email.com</a>
                 </li>
             </ul>
+        </section>
+        <footer id="contact">
             <h2>Підписуйся на нас в соцмережах</h2>
             <ul>
                 <li><a href="#" target="_blank"><svg width="16" height="16">
@@ -274,6 +231,23 @@
                         </svg></a>
                 </li>
             </ul>
+            <form>
+                <h3>Заповніть форму</h3>
+                <div>
+                    <label for="name" class="label">Ім'я</label>
+                    <input type="text" required id="name" value="Олександра">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Пароль</label>
+                    <input type="password" required id="password">
+                </div>
+                <button type="submit">Увійти</button>
+            </form>
         </footer>
     </main>
 </body>
+</html>
